@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(10deg, #d8bbd8 0%, #97D9E1 100%);
+  overflow: hidden;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2.2rem;
+  max-width: 420px;
+  text-align: center;
+  border-radius: 5px;
+  margin: .5rem;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.3);
+}
+
+.feedback-container strong {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: .2rem;
+}
+
+.response-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.response {
+  flex: 1;
+  cursor: pointer;
+  margin: .4rem;
+  padding: .8rem;
+}
+
+.response.active, .response:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.25);
+  border-radius: 4px;
+}
+
+.response img {
+  width: 2.8rem;
+}
+
+.response small {
+  color: rgb(95, 95, 95);
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.response.active small, .response:hover small {
+  color: #111;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(40, 40, 40);
+  color: #fff;
+  padding: .75rem 1.65rem;
+  cursor: pointer;
+  border-radius: 3.5px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.fa-heart {
+  color: rgb(252, 28, 28);
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+
+@media (max-width: 420px) {
+  .feedback-container {
+    padding: 1.6rem 1.2rem;
+  }
+}
